@@ -1,4 +1,4 @@
-const User = require('../models/users');
+const User = require('../models/Users');
 const { verify } = require('jsonwebtoken')
 const { PrivateKey } = process.env
 
