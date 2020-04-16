@@ -1,6 +1,6 @@
 
 const sequelize = require('../db');
-const User = require('./users')
+const User = require('./Users')
 const { Sequelize, Model } = require("sequelize");
 class Profile extends Model {
 
