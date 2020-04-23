@@ -21,16 +21,13 @@ module.exports = {
             console.log(otp)
             // create reusable transporter object using the default SMTP transport
             let transporter = nodemailer.createTransport({
-                service: 'gmail',
+                
                 host: 'smtp.gmail.com',
-                port: 587,
-                secure: false, 
+                port: 465,
+                secure: true, 
                 auth: {
                     user: 'rmanas000@gmail.com', 
                     pass: mailPassword 
-                },
-                tls: {
-                    rejectUnauthorized: false
                 }
             });
             var receiverEmail = req.body.email;
